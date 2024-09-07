@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img id="logo" src="kite-logo.png" width="100" height="100" alt="kite_logo">
+            <h1>K E I T H</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="portfolio.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="theme-switcher">
+                    <a href="#" onclick="toggleTheme()">
+                        <i class="fas fa-adjust"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about_me">
+        <h2 class="about">About </h2>
+        <h2 class="me">Me</h2>
+    </section>
+
+    <section id="p1">
+        <p>Hello! I'm Keith Haven G. Deocariza, an IT student currently in my second year at Holy Cross of Davao College, <br>pursuing a Bachelor of Science in Information Technology. My passion for technology drives me <br>to explore various aspects of IT, from software development to system analysis. </p>
+    </section>
+
+    <section id="p2">
+        <p>As a dedicated student, I am eager to apply my growing knowledge and skills in real-world scenarios.<br> I am committed to learning, solving problems, and contributing to innovative projects that push the<br> boundaries of technology. </p>
+    </section>
+
+    <section id="educational_bg">
+        <h2 class="educational">Educational </h2>
+        <h2 class="bg">Background</h2>
+    </section>
+
+    <section id="seniorhigh">
+        <p class="shs">Senior High School</p>
+        <p class="info1">Holy Cross of Mintal Inc.<br>2021-2023<br>STEM Club Member<br>With Honors</p>
+    </section>
+
+    <section id="juniorhigh">
+        <p class="jhs">Junior High School</p>
+        <p class="info2">Holy Cross of Mintal Inc.<br>2017-2021<br>Science Club Member<br>Best Group SIP</p>
+    </section>
+
+    <section id="elementary">
+        <p class="elem">Elementary</p>
+        <p class="info3">UCCP Paaralang Pag-asa<br>2010-2017<br>Most Humble<br>5th Honors</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+    </section>
+
+    <section id="problem_solving">
+        <h3 class="prob_solving">• Problem Solving</h3>
+    </section>
+
+    <section id="communication">
+        <h3 class="comm">• Communication</h3>
+    </section>
+
+    <section id="teamwork">
+        <h3 class="tw">• Teamwork</h3>
+    </section>
+
+    <section id="time_management">
+        <h3 class="tm">• Time Management</h3>
+    </section>
+
+    <section id="socials">
+        <div class="email">
+            <p>keithhaven.deocariza@hcdc.edu.ph</p>
+        </div>
+        <div class="icons">
+            <a href="https://www.facebook.com/keithhaven.deocariza">
+                <div class="icon-wrapper">
+                    <img class="fb light-icon" src="facebook-app-round-white-icon.png" width="50" height="50" alt="fb_light_logo">
+                    <img class="fb dark-icon" src="facebook-app-round-icon.png" width="50" height="50" alt="fb_dark_logo">
+                </div>
+            </a>
+            <a href="https://www.instagram.com/khaven013/">
+                <div class="icon-wrapper">
+                    <img class="ig light-icon" src="instagram-white-icon.png" width="50" height="50" alt="ig_light_logo">
+                    <img class="ig dark-icon" src="black-instagram-icon.png" width="50" height="50" alt="ig_dark_logo">
+                </div>
+            </a>
+        </div> 
+    </section>
+
+    <script>
+
+        let currentTheme = 'dark-mode';
+
+        function toggleTheme() {
+            if (currentTheme === 'dark-mode') {
+                currentTheme = 'light-mode';
+            } else if (currentTheme === 'light-mode') {
+                currentTheme = 'custom-theme';
+            } else {
+                currentTheme = 'dark-mode';
+            }
+            document.documentElement.className = currentTheme;
+        }
+
+        document.documentElement.className = currentTheme;
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  
+    <header>
+        <div class="header-content">
+            <img id="logo" src="kite-logo.png" width="100" height="100" alt="kite_logo">
+            <h1>K E I T H</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="portfolio.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="theme-switcher">
+                    <a href="#" onclick="toggleTheme()">
+                        <i class="fas fa-adjust"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact_me">
+        <h2 class="contact">CONTACT ME</h2>
+    </section>
+
+    <section>
+        <h3 class="greetings">I'm open to new opportunities and collaborations. Feel free to get in touch!</h3>
+    </section>
+
+    <section class="gmail_container">
+        <h4 class="gmail">Email:</h4>
+        <h4 class="gmail_t">keithhaven.deocariza@hcdc.edu.ph</h4>
+    </section>
+
+    <section class="facebook_container">
+        <h4 class="facebook">Facebook: </h4>
+        <h4 class="facebook_t">Keith Haven Deocariza</h4>
+    </section>
+
+    <section class="insta_container">
+        <h4 class="insta">Instagram: </h4>
+        <h4 class="insta_t">@khaven013</h4>
+    </section>
+
+    <section id="socials">
+        <div class="email">
+            <p>keithhaven.deocariza@hcdc.edu.ph</p>
+        </div>
+        <div class="icons">
+            <a href="https://www.facebook.com/keithhaven.deocariza">
+                <div class="icon-wrapper">
+                    <img class="fb light-icon" src="facebook-app-round-white-icon.png" width="50" height="50" alt="fb_light_logo">
+                    <img class="fb dark-icon" src="facebook-app-round-icon.png" width="50" height="50" alt="fb_dark_logo">
+                </div>
+            </a>
+            <a href="https://www.instagram.com/khaven013/">
+                <div class="icon-wrapper">
+                    <img class="ig light-icon" src="instagram-white-icon.png" width="50" height="50" alt="ig_light_logo">
+                    <img class="ig dark-icon" src="black-instagram-icon.png" width="50" height="50" alt="ig_dark_logo">
+                </div>
+            </a>
+        </div> 
+    </section>
+    
+    <script>
+
+        let currentTheme = 'dark-mode';
+
+        function toggleTheme() {
+            if (currentTheme === 'dark-mode') {
+                currentTheme = 'light-mode';
+            } else if (currentTheme === 'light-mode') {
+                currentTheme = 'custom-theme';
+            } else {
+                currentTheme = 'dark-mode';
+            }
+            document.documentElement.className = currentTheme;
+        }
+
+        document.documentElement.className = currentTheme;
+    </script>
+</body>
+</html>
